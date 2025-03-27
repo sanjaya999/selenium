@@ -11,7 +11,7 @@ import urllib.parse
 import re
 
 # Create a directory to save images if it doesn't exist
-download_dir = os.path.join(os.getcwd(), 'downloaded_images')
+download_dir = os.path.join(os.getcwd(), 'bike')
 os.makedirs(download_dir, exist_ok=True)
 print(f"Images will be saved to: {download_dir}")
 
@@ -22,7 +22,7 @@ options.add_argument('--start-maximized')
 service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service, options=options)
 
-# Function to clean filename
+
 def clean_filename(filename):
     # Remove invalid characters for filenames
     return re.sub(r'[\\/*?:"<>|]', "", filename)
@@ -84,10 +84,16 @@ def download_image(img_url, img_alt, index):
 
 # List of search URLs to process
 search_urls = [
-    "https://www.google.com/search?q=honda+scooter+india&tbm=isch",
-    "https://www.google.com/search?q=tvs+scooter+models&tbm=isch",
-    "https://www.google.com/search?q=suzuki+scooter+india&tbm=isch",
-    "https://www.google.com/search?q=yamaha+scooter+india&tbm=isch"
+    # "https://www.google.com/search?q=honda+bike+india&tbm=isch",
+    # "https://www.google.com/search?q=tvs+bike+models&tbm=isch",
+    # "https://www.google.com/search?q=suzuki+bike+india&tbm=isch",
+    # "https://www.google.com/search?q=yamaha+bike+india&tbm=isch",
+    "https://www.google.com/search?q=bajaj+bike+india&tbm=isch",
+    "https://www.google.com/search?q=ktm+bike+india&tbm=isch",
+    "https://www.google.com/search?q=kawasaki+bike+india&tbm=isch",
+    "https://www.google.com/search?q=aprilia+bike+india&tbm=isch",
+
+
 ]
 
 # Function to process a single search URL - simplified to just download images without checking dimensions

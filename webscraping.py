@@ -105,11 +105,16 @@ def download_image(img_url, img_alt, index):
 
 # List of search URLs to process
 search_urls = [
-    "https://www.google.com/search?q=hero+scooter+image&tbm=isch",
-    "https://www.google.com/search?q=honda+scooter+india&tbm=isch",
-    "https://www.google.com/search?q=tvs+scooter+models&tbm=isch",
-    "https://www.google.com/search?q=suzuki+scooter+india&tbm=isch",
-    "https://www.google.com/search?q=yamaha+scooter+india&tbm=isch"
+    # "https://www.google.com/search?q=hero+scooter+image&tbm=isch",
+    # "https://www.google.com/search?q=honda+scooter+india&tbm=isch",
+    # "https://www.google.com/search?q=tvs+scooter+models&tbm=isch",
+    # "https://www.google.com/search?q=suzuki+scooter+india&tbm=isch",
+    # "https://www.google.com/search?q=yamaha+scooter+india&tbm=isch"
+    "https://www.google.com/search?q=bajaj+bike+india&tbm=isch",
+    "https://www.google.com/search?q=ktm+bike+india&tbm=isch",
+    "https://www.google.com/search?q=kawasaki+bike+india&tbm=isch",
+    "https://www.google.com/search?q=aprilia+bike+india&tbm=isch",
+
 ]
 
 # Function to process a single search URL
